@@ -36,21 +36,32 @@ int main(){
   cout<<result;
   }
   else{
-      cout<<"Enter the value of the radian:";  //enter the value of only  radians no need to mention ratio
-      cin>>x ; 
+      cout<<"Enter the trigonometric ratio:";  //enter the  trigonometric ratio using a space (eg. sin 2) 
+      cin>>trigo>>x ; 
       float a,b;
       a = x - ( (x*x*x)/6) + ((x*x*x*x*x)/120) - ((x*x*x*x*x*x*x)/5040) + ((x*x*x*x*x*x*x*x*x)/362880);
       b =  1 - (( x*x/2)) + (( x*x*x*x/24)) - (( x*x*x*x*x*x)/720) + ((x*x*x*x*x*x*x*x)/40320);
-      
-      cout<<"sin("<<x<<"):"<<a<<endl;
-      cout<<"cos("<<x<<"):"<< b<<endl;
-      cout<<"tan("<<x<<"):"<< (a/b)<<endl;
-      cout<<"cosec("<<x<<"):"<<(1/a)<<endl;
-      cout<<"sec("<<x<<"):"<<(1/b)<<endl;
-      cout<<"cot("<<x<<"):"<<(b/a)<<endl;
-
-       
-      
-  }
+      if (trigo == "sin")
+      {
+        cout<<"sin("<<x<<"):"<<a<<endl;
+      }else if (trigo == "cos")
+      {
+        cout<<"cos("<<x<<"):"<< b<<endl;
+      }else if (trigo == "tan")
+      {
+        cout<<"tan("<<x<<"):"<< (a/b)<<endl;
+      }else if (trigo =="cosec"){
+        cout<<"cosec("<<x<<"):"<<(1/a)<<endl;
+      }else if (trigo =="sec")
+      {
+        cout<<"sec("<<x<<"):"<<(1/b)<<endl;
+      }else if (trigo == "cot")
+      {
+        cout<<"cot("<<x<<"):"<<(b/a)<<endl;
+      }else
+      {
+        cout<<"Invalid trigonometric operation";
+      }
+   }
    return 0;
 }
