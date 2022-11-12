@@ -10,7 +10,7 @@ int main(){
    double result;
     cout<<"fundamentaloperation (or) trigonometricoperation :";//Enter (fundamental or trigo)
     cin>>operation;
-  if(operation==fundamental){
+  if(operation=="fundamental"){
   
    
   cout<<"Number 1:";
