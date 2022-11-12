@@ -5,9 +5,9 @@ using namespace std;
 int main(){
   string fundamental,trigo,operation;
   double x;
-   int num1,num2;
+  int num1,num2;
   char op;
-   double result;
+  double result;
     cout<<"fundamentaloperation (or) trigonometricoperation :";//Enter (fundamental or trigo)
     cin>>operation;
   if(operation=="fundamental"){
@@ -64,7 +64,7 @@ int main(){
       }
     }
    else {
-    cout<<"INVALID OPERATION";
+       cout<<"INVALID OPERATION";
       }
    return 0;
 }
