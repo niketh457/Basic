@@ -8,7 +8,7 @@ int main(){
    int num1,num2;
   char op;
    double result;
-    cout<<"fundamentaloperation (or) trigonometricoperation :";
+    cout<<"fundamentaloperation (or) trigonometricoperation :";//Enter (fundamental or trigo)
     cin>>operation;
   if(operation==fundamental){
   
@@ -35,7 +35,7 @@ int main(){
   }
   cout<<result;
   }
-  else{
+  else if(operation == "trigo"){
       cout<<"Enter the trigonometric ratio:";  //enter the  trigonometric ratio using a space (eg. sin 2) 
       cin>>trigo>>x ; 
       float a,b;
@@ -62,6 +62,9 @@ int main(){
       {
         cout<<"Invalid trigonometric operation";
       }
-   }
+    }
+   else {
+    cout<<"INVALID OPERATION"
+      }
    return 0;
 }
