@@ -36,7 +36,7 @@ int main(){
   cout<<result;
   }
   else if(operation == "trigo"){
-      cout<<"Enter the trigonometric ratio:";  //enter the  trigonometric ratio using a space (eg. sin 2) 
+      cout<<"Enter the trigonometric ratio:";  //enter the  trigonometric ratio in radians using a space (eg. sin 2) 
       cin>>trigo>>x ; 
       float a,b;
       a = x - ( (x*x*x)/6) + ((x*x*x*x*x)/120) - ((x*x*x*x*x*x*x)/5040) + ((x*x*x*x*x*x*x*x*x)/362880);
