@@ -64,7 +64,7 @@ int main(){
       }
     }
    else {
-    cout<<"INVALID OPERATION"
+    cout<<"INVALID OPERATION";
       }
    return 0;
 }
